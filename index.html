@@ -8,38 +8,98 @@
     <title>FE</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header"></header>
 
-    </header>
     <div class="main">
         <div class="main_menu">
         </div>
-        <div class="main_content">
-            123
-        </div>
-    </div>
-    <div class="content">
-        <div class="text">
-            Text
-        </div>
-        <button class="button">
-            Button
-        </button>
-        <div class="placeholder">
-            Placeholder
-        </div>
-        <button class="toggle">
-            Toggle
-        </button>
+
+        <form class="main_content">
+            <div class="main_head">
+                <h2 class="main_title text">
+                    Учебное заведение
+                </h2>
+                <button type="submit" class="form_submit button">
+                    Сохранить
+                </button>
+            </div>
+            <div class="main_form">
+                <h3 class="main_subtitle text">
+                    Специальность
+                </h3>
+                <div class="input_box">
+                    <input type="text" placeholder="Введите тест" value = ''>
+                    <input type="checkbox" class="input_checkbox" id="university">
+                    <label class="text" for="university">Высшее учебное заведение Санкт-Петербурга</label>
+                </div>
+                <h3 class="main_subtitle text">
+                    Заведение
+                </h3>
+                <div class="input_box">
+                    <input type="text" placeholder="Введите тест">
+                    <input type="checkbox" checked class="input_checkbox" id="magistracy">
+                    <label class="text" for="magistracy">Магистратура учебного заведения</label> 
+                </div> 
+                <div class="main_new">
+                    <h3 class="main_subtitle text">
+                        Учебные степени и звания
+                    </h3>
+                    <div class="remove_box">
+                        <div class="button_remove"></div>
+                        <div class="input_attention">
+                            <h3 class="main_subtitle text">
+                                Ученая степень
+                            </h3>
+                            <input class="input_check" type="text" placeholder="Введите тест" value = ''>
+                            <div class="toggle active">
+                                <span class="switch"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="main_subtitle text">
+                                Область
+                            </h3>
+                            <input class="input_check" type="text" placeholder="Введите тест" value = ''>
+                        </div>
+                    </div>  
+                    <button class="button">
+                        Добавить
+                    </button>
+                    <div class="remove_box">
+                        <div class="button_remove"></div>
+                        <div class="input_attention">
+                            <h3 class="main_subtitle text">
+                                Ученая степень
+                            </h3>
+                            <input class="input_check" type="text" placeholder="Введите тест" value = ''>
+                            <div class="toggle">
+                                <span class="switch"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="main_subtitle text">
+                                Область
+                            </h3>
+                            <input class="input_check" type="text" placeholder="Введите тест" value = ''>
+                        </div>
+                    </div>  
+                    <button class="button" disabled>
+                        Добавить
+                    </button>
+                </div>
+
+                <div style="display: flex; margin-top: 20px;">
+                    <button class="button white" style="margin-right: 5px;">
+                        white
+                    </button>
+                    <button class="button black">
+                        black
+                    </button>
+                </div>
+            </div>
+        </form>
     </div>
 
-    <script>
-        const body = document.querySelector('body')
-        const toggle = body.querySelector('.toggle')
-
-        toggle.addEventListener('click', ()=> {
-            body.classList.toggle('dark')
-        })
-    </script>
+    <script src="index.js"></script>
 </body>
 </html>
