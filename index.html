@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>FE</title>
+</head>
+<body>
+    <header class="header">
+
+    </header>
+    <div class="main">
+        <div class="main_menu">
+        </div>
+        <div class="main_content">
+            123
+        </div>
+    </div>
+    <div class="content">
+        <div class="text">
+            Text
+        </div>
+        <button class="button">
+            Button
+        </button>
+        <div class="placeholder">
+            Placeholder
+        </div>
+        <button class="toggle">
+            Toggle
+        </button>
+    </div>
+
+    <script>
+        const body = document.querySelector('body')
+        const toggle = body.querySelector('.toggle')
+
+        toggle.addEventListener('click', ()=> {
+            body.classList.toggle('dark')
+        })
+    </script>
+</body>
+</html>
