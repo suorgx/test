@@ -1,10 +1,12 @@
 const body = document.querySelector('body')
 const white = body.querySelector('.white')
 const black = body.querySelector('.black')
-const submit = body.querySelector('.form_submit')
-const check = body.querySelector('.input_check')
-const attention = body.querySelector('.input_attention')
-const toggle = body.querySelectorAll('.toggle')
+const submit = body.querySelector('.form__submit')
+const check = body.querySelector('.form__input_check')
+const attention = body.querySelector('.form__attention')
+const toggle = body.querySelectorAll('.form__toggle')
+
+console.log(toggle)
 
 white.addEventListener('click', (Event)=> {
     Event.preventDefault()
@@ -38,6 +40,6 @@ check.addEventListener('input', ()=> {
 
 for (let i = 0; i < toggle.length; i++) {
     toggle[i].addEventListener('click', ()=> {
-        toggle[i].classList.toggle('active')
+        toggle[i].classList.toggle('form__toggle_active')
     })
 }
