@@ -2,7 +2,7 @@ const body = document.querySelector('body')
 const white = body.querySelector('.white')
 const black = body.querySelector('.black')
 const submit = body.querySelector('.form__submit')
-const check = body.querySelector('.form__input_check')
+const check = body.querySelectorAll('.form__input_check')
 const attention = body.querySelector('.form__attention')
 const toggle = body.querySelectorAll('.form__toggle')
 
@@ -24,23 +24,27 @@ black.addEventListener('click', (Event)=> {
 
 submit.addEventListener('click', (Event)=> {
     Event.preventDefault()
-    if (!check.classList.contains('required')) {
-        check.style.border = "1px solid var(--text-attention)"
-        attention.classList.add('attention')
-    } else {
-        check.style.border = "1px solid var(--input-border)"
-        attention.classList.remove('attention')
+    for (let x = 0; x < check.length; x++) {
+        if (!check[x].classList.contains('required')) {
+            check[x].parentNode.classList.add('attention')
+            check[x].style.border = "1px solid var(--text-attention)"
+        } else {
+            check[x].parentNode.classList.remove('attention')
+            check[x].style.border = "1px solid var(--input-border)"
+        }
     }
 })
 
-check.addEventListener('input', ()=> {
-    let inputValue = check.value.trim()
-    if (inputValue.length > 0) {
-        check.classList.add('required')
-    } else {
-        check.classList.remove('required')
-    }
-})
+for (let y = 0; y < check.length; y++) {
+    check[y].addEventListener('input', ()=> {
+        let inputValue = check[y].value.trim()
+        if (inputValue.length > 0) {
+            check[y].classList.add('required')
+        } else {
+            check[y].classList.remove('required')
+        }
+    })
+}
 
 for (let i = 0; i < toggle.length; i++) {
     toggle[i].addEventListener('click', ()=> {

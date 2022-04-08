@@ -376,7 +376,6 @@ body.dark {
     .main {
         width: 96%;
         justify-content: space-evenly;
-
         .menu {
             width: 16%;
             margin: 0;
@@ -391,19 +390,16 @@ body.dark {
     .main {
         width: 98%;
         flex-direction: column;
-        
         .menu {
             display: none;
         }
         .form {
             width: 100%;
         }
-
         .form__box {
             flex-direction: column;
             align-items: flex-start;
         }
-
         .form__input_text,
         .form__box:nth-of-type(2) .form__input_text {
             width: 100%;
