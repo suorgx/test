@@ -24,6 +24,7 @@
   --text-attention: #D14114;
   --toggle-background: #9F9F9F;
   --remove-hover: #FBF5EE;
+  --button-disabled: #F8F8F8;
   /* transition */
   --transition-average: background-color 0.3s linear, color 0.3s linear;
   /* background */
@@ -60,10 +61,31 @@ body.dark {
   --box-border: #1C2737;
   --remove-hover: #1A2535;
   --toggle-background: #7F8995;
+  --button-disabled: #7F8995;
   --check-svg: transparent url(img/checkdark.svg) no-repeat center / 100%;
   --button-add-svg: transparent url(img/plus.svg) no-repeat center;
   --button-disabled-svg: transparent url(img/plusdarkdisabled.svg) no-repeat center;
   --remove-background: #303A49 url(img/deletedark.svg) no-repeat center;
+}
+
+.text {
+  color: var(--text-color);
+}
+
+.button {
+  color: var(--button-color);
+  background: var(--button-background);
+  border: 1px solid var(--button-background);
+  padding: 11.5px 15.5px;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 16px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.button:hover {
+  opacity: 0.8;
 }
 
 .header {
@@ -99,7 +121,7 @@ body.dark {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 16px 24px;
+  padding: 8px 24px 10px;
   border-radius: 4px 4px 0px 0px;
   background: var(--main-background);
   -webkit-box-align: center;
@@ -110,9 +132,10 @@ body.dark {
 
 .main .form__title {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 27px;
   line-height: 28px;
   width: auto;
+  letter-spacing: 0.3px;
 }
 
 .main .form__settings {
@@ -135,7 +158,8 @@ body.dark {
   font-size: 14px;
   line-height: 16px;
   width: auto;
-  margin: 1px 0 8px;
+  margin: 1px 0 7px;
+  letter-spacing: -0.2px;
 }
 
 .main .form__box {
@@ -145,7 +169,7 @@ body.dark {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 23px;
+  margin-bottom: 24px;
 }
 
 .main .form__box:nth-of-type(2) {
@@ -162,6 +186,7 @@ body.dark {
   padding-left: 16px;
   width: 420px;
   margin-right: 16px;
+  letter-spacing: 0.9px;
 }
 
 .main .form__box:nth-of-type(2) .form__input_text {
@@ -207,8 +232,8 @@ body.dark {
 .main .form__input_checkbox + .form__label::before {
   content: '';
   display: inline-block;
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   -webkit-box-flex: 0;
@@ -218,6 +243,7 @@ body.dark {
   border-radius: 4px;
   margin-right: 4px;
   background: var(--check-svg);
+  background-size: 90%;
 }
 
 .main .form__input_checkbox:checked + .form__label::before {
@@ -228,6 +254,10 @@ body.dark {
 .main .form__label {
   font-size: 14px;
   line-height: 16px;
+}
+
+.main .form__box_new {
+  margin-bottom: 23px;
 }
 
 .main .form__attention {
@@ -251,9 +281,9 @@ body.dark {
 .main .form__box_remove {
   border-radius: 4px;
   border: 1px solid var(--box-border);
-  margin: 16px 0;
+  margin: 15px 0 16px;
   width: 100%;
-  padding: 24px 16px;
+  padding: 23px 16px;
   grid-gap: 16px;
   display: -ms-grid;
   display: grid;
@@ -312,14 +342,15 @@ body.dark {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 10px 17px;
 }
 
 .main .form__box_new .button::before {
   content: '';
   background: var(--button-add-svg);
-  width: 16px;
-  height: 16px;
-  margin-right: 5px;
+  width: 18px;
+  height: 18px;
+  margin-right: 6px;
   background-size: 100%;
 }
 
@@ -358,7 +389,7 @@ body.dark {
 }
 
 .main .form__button:disabled {
-  border-color: var(--placeholder-color);
+  border-color: var(--button-disabled);
   color: var(--placeholder-color);
   cursor: not-allowed;
 }
@@ -367,23 +398,44 @@ body.dark {
   background: var(--button-disabled-svg);
 }
 
-.text {
-  color: var(--text-color);
-}
-
-.button {
-  color: var(--button-color);
-  background: var(--button-background);
-  border: 1px solid var(--button-background);
-  padding: 12px 16px;
+.main .form__choise {
+  width: 286px;
+  background-color: var(--side-background);
   border-radius: 4px;
-  font-size: 14px;
-  line-height: 16px;
-  cursor: pointer;
-  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 3px 0 0px;
 }
 
-.button:hover {
-  opacity: 0.8;
+.main .form__choise .button {
+  width: 48%;
+  background-color: var(--side-background);
+  border-radius: 4px;
+  border-color: transparent;
+  color: var(--text-color);
+  padding: 8px 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 6px;
+}
+
+.main .form__choise .button_active {
+  background-color: var(--main-background);
+  font-weight: 700;
+  -webkit-box-shadow: 0px 1px 4px rgba(58, 58, 58, 0.3);
+          box-shadow: 0px 1px 4px rgba(58, 58, 58, 0.3);
+}
+
+.main .form__delimiter {
+  border-left: 1px solid var(--box-border);
+  height: 20px;
 }
 /*# sourceMappingURL=index.css.map */

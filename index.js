@@ -6,16 +6,20 @@ const check = body.querySelector('.form__input_check')
 const attention = body.querySelector('.form__attention')
 const toggle = body.querySelectorAll('.form__toggle')
 
-console.log(toggle)
 
 white.addEventListener('click', (Event)=> {
     Event.preventDefault()
     body.classList.remove('dark')
+    black.classList.remove('button_active')
+    white.classList.add('button_active')
+
 })
 
 black.addEventListener('click', (Event)=> {
     Event.preventDefault()
     body.classList.add('dark')
+    white.classList.remove('button_active')
+    black.classList.add('button_active')
 })
 
 submit.addEventListener('click', (Event)=> {
