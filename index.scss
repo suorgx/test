@@ -621,6 +621,11 @@ body.dark {
         grid-gap: 10px;
         grid-template-columns: 100%;
     }
+
+    .main .form__box_remove .form__subtitle {
+        margin: 7px 0;
+    }
+
     .main .form__head {
         flex-direction: column;
         align-items: flex-start;

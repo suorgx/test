@@ -747,6 +747,9 @@ body.dark {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
   }
+  .main .form__box_remove .form__subtitle {
+    margin: 7px 0;
+  }
   .main .form__head {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
