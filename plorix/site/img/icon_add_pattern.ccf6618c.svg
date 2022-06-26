@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+    <g transform="translate(-891 -2131)">
+        <circle data-name="타원 433" cx="8" cy="8" r="8" transform="translate(891 2131)" style="fill:#fff"/>
+        <g transform="translate(894.2 2134.2)">
+            <rect data-name="사각형 2334" width="1.6" height="9.6" rx=".8" transform="translate(4)" style="fill:#ff6900"/>
+            <rect data-name="사각형 2335" width="1.6" height="9.6" rx=".8" transform="rotate(90 2.8 6.8)" style="fill:#ff6900"/>
+        </g>
+    </g>
+</svg>

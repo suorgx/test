@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+    <g data-name="!_icon">
+        <g data-name="타원 49" style="stroke:gray;fill:none">
+            <circle cx="30" cy="30" r="30" style="stroke:none"/>
+            <circle cx="30" cy="30" r="29.5" style="fill:none"/>
+        </g>
+        <path data-name="!_icon" d="M2.653-4.531h2.054l.7-17.009h-3.43zM3.68 2.46a2.053 2.053 0 0 0 2-2.174 2.044 2.044 0 0 0-2-2.144 2.044 2.044 0 0 0-2 2.144 2.053 2.053 0 0 0 2 2.174z" transform="translate(26.32 39.54)" style="fill:gray"/>
+    </g>
+</svg>

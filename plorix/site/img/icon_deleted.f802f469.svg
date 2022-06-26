@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+    <g data-name="패스 15449" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10">
+        <path d="M32 62A30 30 0 1 0 2 32a30.011 30.011 0 0 0 30 30z" style="stroke:none" transform="translate(-2 -2)"/>
+        <path d="M32 60a27.8 27.8 0 0 0 10.894-2.2 27.928 27.928 0 0 0 8.902-6.004 27.928 27.928 0 0 0 6.003-8.902A27.8 27.8 0 0 0 60 32a27.8 27.8 0 0 0-2.2-10.894 27.928 27.928 0 0 0-6.004-8.902 27.928 27.928 0 0 0-8.902-6.003A27.8 27.8 0 0 0 32 4a27.8 27.8 0 0 0-10.894 2.2 27.928 27.928 0 0 0-8.902 6.004 27.928 27.928 0 0 0-6.003 8.902A27.8 27.8 0 0 0 4 32a27.8 27.8 0 0 0 2.2 10.894 27.928 27.928 0 0 0 6.004 8.902 27.928 27.928 0 0 0 8.902 6.003A27.8 27.8 0 0 0 32 60m0 2C15.44 62 2 48.56 2 32 2 15.44 15.44 2 32 2c16.56 0 30 13.44 30 30 0 16.56-13.44 30-30 30z" style="fill:#fc5252;stroke:none" transform="translate(-2 -2)"/>
+    </g>
+    <path data-name="패스 15450" d="M44.678 5 4.9 44.778" transform="translate(5.165 4.851)" style="stroke:#fc5252;stroke-width:2px;fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"/>
+</svg>
